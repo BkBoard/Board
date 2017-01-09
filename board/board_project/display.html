@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
-  <meta charset="'windows-1225">
+  <meta charset="'windows-1255">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -38,39 +38,6 @@
 	}	
 	
 
-.scroll-up{
-	overflow: hidden;
- position: relative; 
-  /* Starting position */
- -moz-transform:translateY(0%);
- -webkit-transform:translateY(0%);	
- transform:translateY(100%);
- /* Apply animation to this element */	
- -moz-animation: scroll-up 5s linear infinite;
- -webkit-animation: scroll-up 5s linear infinite;
- animation: scroll-up 5s linear infinite;
-}
-/* Move it (define the animation) 
-@-moz-keyframes scroll-up {
- 0%   { -moz-transform: translateY(100%); }
- 100% { -moz-transform: translateY(0%); }
-}
-@-webkit-keyframes scroll-up {
- 0%   { -webkit-transform: translateY(100%); }
- 100% { -webkit-transform: translateY(0%); }
-}
-@keyframes scroll-up {
- 0%   { 
- -moz-transform: translateY(100%); /* Browser bug fix */
- -webkit-transform: translateY(100%); /* Browser bug fix */
- transform: translateY(100%); 		
- }
- 100% { 
- -moz-transform: translateY(0%); /* Browser bug fix */
- -webkit-transform: translateY(0%); /* Browser bug fix */
- transform: translateY(0%); 
- }*/
-}
   </style>
 </head>
 
@@ -87,36 +54,48 @@
   <div class="row upper_row">
     <div class="col-md-3 upper_row">
       <h3>זמני היום</h3>      
-	  <script type="text/javascript">
-<!--
-	//set the marquee parameters
-	function init() { up_marquee.start(); }
-	var up_marquee_Text = 'JavaScript scrolling text';
-	var up_marquee_Direction = 'up';
-	var up_marquee_Contents='<span style="font-family:Comic Sans MS;font-size:12pt;white-space:nowrap;">' + up_marquee_Text + '</span>';
-	up_marquee = new xbMarquee('up_marquee', '200px', '90%', 6, 100, up_marquee_Direction, 'scroll', up_marquee_Contents);
-		
-	window.setTimeout( init, 200);
--->
-</script>
     </div>
     <div class="col-md-6 upper_row" style="background-image:url(img.png);border-left: 1px solid black;">
-      <h3></h3>
-      <p class=center>לעילוי נשמת</p>
+	<div class="container">
+	  <br>
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	      <li data-target="#myCarousel" data-slide-to="3"></li>
+	    </ol>
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	      <div class="item active">
+	        <img src="candle1.jpg" alt="נר ה' נשמת אדם" width="191" height="127">
+			<h3> לעילוי נשמת</h3>
+			<p> 			  ר' אברהם ב"ר יצחק זצ"ל נפטר כ"ה כסלו תש"א</p>
+	
+
+	      </div>
+
+	      <div class="item">
+	        <img src="candle2.jpg" alt="נר ה' נשמת אדם" width="158" height="23">
+	      </div>
+    
+	      <div class="item">
+	        <img src="candle3.jpg" alt="נר ה' נשמת אדם" width="100" height="127">
+	      </div>
+
+	      <div class="item">
+        	<img src="candle4.jpg" alt="נר ה' נשמת אדם" width="169" height="127">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
     </div>
     <div class="col-md-3 upper_row" style="border-left: 1px solid black;">
       <h3>זמני תפילות</h3>      
 	  
-	  <script type="text/javascript">
-<!--
-	//set the marquee parameters
-	function init2() { tfilot_marquee.start(); }		
-	var tfilot_marquee_Contents='<div class="row">	  <div class = "col-md-6 tfila_time"> 5:40 </div>	  <div class = "col-md-6 tfila_name"> שחרית מניין ראשון </div>	  </div>';
-	tfilot_marquee = new xbMarquee('tfilot_marquee', '200px', '90%', 1, 30, 'up', 'scroll', tfilot_marquee_Contents);
-		
-	window.setTimeout( init2, 200);
--->
-</script>
 
 	  <div class="row">
 	  <div class = "col-md-6 tfila_time"> 5:40 </div>
