@@ -1,0 +1,234 @@
+<html>
+	<head>
+		<title>Multiple Bootstrap Carousel Slidesshow Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- bootstrap css library -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!-- bootstrap js library -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- jQuery latest library -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- carousel customizing css code -->
+		<style>
+		.carousel {
+			/* you can add customizing css here like slider height width */
+		}
+		</style>
+		
+		<!-- carousel js code -->
+		<script>
+		/* first carousel slidesshow */
+		$('#carousel-1').carousel({
+		  
+		  // The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.
+		  interval: 50,
+
+		  // Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.
+		  pause: "hover",
+		  
+		  // Whether the carousel should cycle continuously or have hard stops.
+		  wrap: true,
+		  
+		  // Whether the carousel should react to keyboard events.
+		  keyboard: true
+		});
+		
+		/* second carousel slidesshow */
+		$('#carousel-2').carousel({
+		  interval: 50,
+		  pause: "hover", 
+		  wrap: true,
+		  keyboard: true
+		});
+		
+		$('#carousel-3').carousel({
+		  interval: 50,
+		  pause: "hover", 
+		  wrap: true,
+		  keyboard: true
+		});
+		$('#carousel-4').carousel({
+		  interval: 50,
+		  pause: "hover", 
+		  wrap: true,
+		  keyboard: true
+		});
+		$('#carousel-5').carousel({
+		  interval: 50,
+		  pause: "hover", 
+		  wrap: true,
+		  keyboard: true
+		});
+		</script>
+		
+	</head>
+	
+	<body>
+		<div class="container">
+		<div class="row">
+		 <!-------------- first column start -------------->
+			 <div class="col-md-4">
+				  <div class="jumbotron">
+					   <center><h2>זמני היום</h2></center>
+					   <!-------------- first carousel slidesshow start -------------->
+						   <div id="carousel-1" class="carousel slide" data-ride="carousel">
+						   <!-- slides bulletes -->
+							   <!-- wrapper for slides -->
+								   <div class="carousel-inner" role="listbox">
+								    
+								    <!-- slides 1 -->
+								    <div class="item active">
+								     <img src="images/girl-1.jpg" alt="Chania">
+								    </div>
+								 
+								    <!-- slides 2 -->
+								    <div class="item">
+								     <img src="images/girl-2.jpg" alt="Chania">
+								    </div>
+								 
+								    <!-- slides 3 -->
+								    <div class="item">
+								     <img src="images/girl-3.jpg" alt="Flower">
+								    </div>
+
+								   </div>
+								  </div>
+								  <!-------------- first carousel slidesshow end -------------->
+								  </div>
+								 </div>
+
+				 <!-------------- first column end -------------->
+		 <div class="col-md-4">			
+			<div class="jumbotron">
+				<center><h2>לעילוי נשמת</h2></center>
+				
+				<!-------------- second carousel slidesshow start -------------->
+				<div id="carousel-2" class="carousel slide" data-ride="carousel">
+					<!-- wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<!-- slides 1 -->
+						 <div class="item active">
+						     <img src="images/candle1.jpg" alt="Chania">
+						</div>
+						<!-- slides 2 -->
+						<div class="item">
+						    <img src="images/candle2.jpg" alt="Chania">
+						</div>
+						<!-- slides 3 -->
+						<div class="item">
+						     <img src="images/candle3.jpg" alt="Flower">
+						</div>
+						<!-- slides 4 -->
+						<div class="item">
+						     <img src="images/candle4.jpg" alt="Flower">
+						</div>
+					</div>
+
+				</div>
+				<!-------------- second carousel slidesshow end -------------->
+			</div>
+		</div>		
+
+		<div class="col-md-4">			
+			<div class="jumbotron">
+				<center><h2>זמני תפילה</h2></center>
+				
+				<!-------------- second carousel slidesshow start -------------->
+				<div id="carousel-3" class="carousel slide" data-ride="carousel">
+				
+					<!-- wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<!-- slides 1 -->
+						<div class="item active">
+							<img src="images/animal-1.jpg" alt="Chania">
+						</div>
+						
+						<!-- slides 2 -->
+						<div class="item">
+							<img src="images/girl-2.jpg" alt="Chania">
+						</div>
+						
+						<!-- slides 3 -->
+						<div class="item">
+							<img src="images/animal-2.jpg" alt="Flower">
+						</div>
+					</div>
+
+				</div>
+				<!-------------- second carousel slidesshow end -------------->
+			</div>
+		</div>		
+		</row>	
+<div class="row">
+		 <!-------------- first column start -------------->
+			 <div class="col-md-6">
+				  <div class="jumbotron">
+					   <center><h2>הודעות</h2></center>
+					   <!-------------- first carousel slidesshow start -------------->
+						   <div id="carousel-4" class="carousel slide" data-ride="carousel">
+						   <!-- slides bulletes -->
+							   <!-- wrapper for slides -->
+								   <div class="carousel-inner" role="listbox">
+								    
+								    <!-- slides 1 -->
+								    <div class="item active">
+								     <img src="images/girl-1.jpg" alt="Chania">
+								    </div>
+								 
+								    <!-- slides 2 -->
+								    <div class="item">
+								     <img src="images/girl-2.jpg" alt="Chania">
+								    </div>
+								 
+								    <!-- slides 3 -->
+								    <div class="item">
+								     <img src="images/girl-3.jpg" alt="Flower">
+								    </div>
+
+								   </div>
+								  </div>
+								  <!-------------- first carousel slidesshow end -------------->
+								  </div>
+								 </div>
+
+				 <!-------------- first column end -------------->
+		 <div class="col-md-6">			
+			<div class="jumbotron">
+				<center><h2>שיעורים</h2></center>
+				
+				<!-------------- second carousel slidesshow start -------------->
+				<div id="carousel-5" class="carousel slide" data-ride="carousel">
+					<!-- wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<!-- slides 1 -->
+						<div class="item active">
+							<img src="images/animal-3.jpg" alt="Chania">
+						</div>
+						
+						<!-- slides 2 -->
+						<div class="item">
+							<img src="images/animal-1.jpg" alt="Chania">
+						</div>
+						
+						<!-- slides 3 -->
+						<div class="item">
+							<img src="images/animal-2.jpg" alt="Flower">
+						</div>
+					</div>
+
+				</div>
+				<!-------------- second carousel slidesshow end -------------->
+			</div>
+		</div>		
+
+		</row>	
+
+
+	</div>
+	</body>
+</html>
